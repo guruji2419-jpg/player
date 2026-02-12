@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="icon" href="Spotify Logo.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right,#1DB954,#121212);
+            color: white;
+            text-align: center;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #121212;
+        }
+
+        .navbar h2{
+            color: #1DB954;
+        }
+
+        .navbar input{
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        .navbar button{
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #1DB954;
+            color: black;
+            font-weight: bold;
+        }
+
+        .card{
+            margin-top: 50px;
+            background-color: #181818;
+            padding: 30px;
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .card img{
+            width: 100%;
+            border-radius: 15px;
+            animation: pop 0.6s ease;
+        }
+
+     
+
+        .card h3{
+            margin: 15px 0;
+        }
+
+        audio{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .controls{
+            margin-top: 15px;
+        }
+
+        .controls a button{
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #1DB954;
+            color: black;
+            font-weight: bold;
+        }
+
+        iframe{
+            margin-top: 40px;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>🎵 My Music</h2>
+        <div>
+            <input type="search" placeholder="Search music...">
+            <button>Search</button>
+            <button>Favourite</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="Thani Oruvan Movie Poster By Pilimbee.jpg" alt="Thani Oruvan">
+
+        <h3>Theemai Dhaan Vellum</h3>
+
+        <audio controls>
+            <source src="Theemai Dhaan Vellum Awakening The Monster.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="controls">
+            <a href="Kadhal Cricket Love Not Out.mp3">
+                <button>⏮ Back</button>
+            </a>
+            <a href="Kannala Kannala The Melting Point Of Love.mp3">
+                <button>⏭ Next</button>
+            </a>
+        </div>
+    </div><center>
+        <h2 style="color: black; background-color:  #1DB954;display: inline-block;border-radius: 40px;padding: 10px;margin-top: 20px;">🎶 More songs</h2>
+    </center>
+    <iframe src="https://open.spotify.com/embed/track/23p1uP74XiVYCXjPP23Kz7"
+        width="80%" height="352" frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+    </iframe>
+
+</body>
+</html>
